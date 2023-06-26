@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 33vh 33vh 34vh;
+  grid-template-columns: 0.6fr 1fr;
+  grid-template-areas: "left-top right-top" "... middle-right" "left-bottom right-bottom";
+  align-content: end;
+}
+
+.bckgr-pct {
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
+  background-image: url(/img/forset.avif);
+  background-size: cover;
+}
+.logo-div {
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 20%;
+  grid-area: left-top;
+  opacity: 0.5;
+  background-color: black;
+}
+
+h1 {
+  align-self: center;
+}
+
+.painter-info {
+  color: white;
+  grid-area: left-bottom;
+  justify-self: center;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+.right-side {
+}
+.top-par {
+  background-color: rgb(238, 234, 234);
+}
+
+.top-par > p {
+  padding-left: 2rem;
+}
+
+.top-par > p:first-child {
+  margin-top: 150px;
+}
+.form-div {
+  padding-left: 2rem;
+  grid-area: middle-right;
+
+  /*display: grid;
+  grid-row: 1 / 4;
+  grid-column: 1 / 3;*/
+}
+.first-name-div {
+}
+.first-name-label {
+}
+.email-div {
+}
+.email-label {
+}
+.password-div {
+}
+.password-label {
+}
+.last-name-div {
+}
+.last-name-label {
+}
+.phone-number-div {
+}
+.phone-number-label {
+}
+.cnfrm-password-div {
+}
+.cnfrm-password-label {
+}
+
+.right-bottom-side {
+  padding-left: 2rem;
+  grid-area: right-bottom;
+  background-color: rgb(238, 234, 234);
+}
+
+.btn-div {
+}
+
+#btn-create {
+  padding: 30px;
+}

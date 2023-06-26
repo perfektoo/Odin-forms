@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forms project</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="grid-container">
-        <div class="bckgr-pct"></div>
-        <div class="logo-div">
-          <img src="/img/odin-lined.png" alt="odin" />
-          <h1>ODIN</h1>
-        </div>
-        <div class="painter-info">
-          <p>Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
-        </div>
-
-
-        <div class="top-par">
-        <p>This is ont a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</em></p>
-        <br/>
-        <p>You <em>know</em> you want to!</p>
-        </div>
-        
-        <div class="form-div">
+<div class="form-div">
           <form action="#" method="post">
             
             <h2>Let's do this!</h2>
@@ -67,18 +41,3 @@
     
           </form>
         </div>
-
-        <div class="right-bottom-side">
-          <div class="btn-div">
-            <button type="submit" id="btn-create">Create Account</button>
-          </div>
-          <br/>
-          <div class="para-div"><p>Already have an ccount? <a href="#">Log in</a></p></div>
-        </div>
-        
-        
-      
-
-    </div>
-  </body>
-</html>
