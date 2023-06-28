@@ -1,99 +1,149 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
+  font-family: Roboto;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-rows: 33vh 33vh 34vh;
-  grid-template-columns: 0.6fr 1fr;
-  grid-template-areas: "left-top right-top" "... middle-right" "left-bottom right-bottom";
-  align-content: end;
+a {
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
 }
 
-.bckgr-pct {
-  grid-row: 1 / 4;
-  grid-column: 1 / 2;
-  background-image: url(/img/forset.avif);
+@font-face {
+  font-family: "Norse";
+  src: url(/font/Norse-Bold.otf);
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40vw;
+  height: 100vh;
+  color: white;
+  background-image: url(/img/back.jpg);
   background-size: cover;
+  text-align: center;
 }
-.logo-div {
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40vw;
+  height: 30vh;
+}
+
+.odin-plus {
   display: flex;
   justify-content: center;
-  color: white;
-  height: 20%;
-  grid-area: left-top;
-  opacity: 0.5;
+  align-items: center;
+  height: 130px;
+  width: 40vw;
   background-color: black;
+  opacity: 0.5;
 }
-
-h1 {
-  align-self: center;
+.odin-plus > p {
+  font-family: Norse;
+  font-size: 4rem;
+}
+img#odin-logo {
+  height: 130px;
 }
 
 .painter-info {
-  color: white;
-  grid-area: left-bottom;
-  justify-self: center;
-  margin-bottom: 0;
-  margin-top: auto;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
 }
+
 .right-side {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  height: 100vh;
 }
-.top-par {
-  background-color: rgb(238, 234, 234);
+.top-para {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 30vh;
+  width: 60vw;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 35px;
+  background-color: rgb(242, 242, 192);
 }
 
-.top-par > p {
-  padding-left: 2rem;
+.middle-div {
+  background-color: white;
+  padding-left: 35px;
+  padding-top: 20px;
+  height: 40vh;
 }
 
-.top-par > p:first-child {
-  margin-top: 150px;
-}
 .form-div {
-  padding-left: 2rem;
-  grid-area: middle-right;
-
-  /*display: grid;
-  grid-row: 1 / 4;
-  grid-column: 1 / 3;*/
-}
-.first-name-div {
-}
-.first-name-label {
-}
-.email-div {
-}
-.email-label {
-}
-.password-div {
-}
-.password-label {
-}
-.last-name-div {
-}
-.last-name-label {
-}
-.phone-number-div {
-}
-.phone-number-label {
-}
-.cnfrm-password-div {
-}
-.cnfrm-password-label {
+  width: 70%;
+  padding-top: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
-.right-bottom-side {
-  padding-left: 2rem;
-  grid-area: right-bottom;
-  background-color: rgb(238, 234, 234);
+form {
+  display: flex;
+  justify-content: space-between;
 }
 
-.btn-div {
+.pdg-prop {
+  padding-bottom: 20px;
 }
 
-#btn-create {
-  padding: 30px;
+input {
+  outline: none;
+  border-radius: 4px;
+  height: 1.5rem;
+  border: 1px solid lightgray;
+}
+input:focus {
+  border: 2px solid lightblue;
+}
+
+strong {
+  color: red;
+}
+
+.bottom-right-side {
+  padding-left: 35px;
+  padding-top: 35px;
+  background-color: rgb(242, 242, 192);
+  height: 30vh;
+}
+
+button {
+  padding: 10px 5px;
+  border-radius: 10px;
+  width: 10rem;
+  background-color: rgb(242, 242, 192);
+  border: 1px solid rgb(72, 72, 148);
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 14px -13px rgba(34, 60, 80, 0.6);
+}
+
+button:hover {
+  background-color: rgb(72, 72, 148);
+  color: white;
+}
+
+#loglink {
+  color: rgb(72, 72, 148);
+  text-decoration: none;
 }

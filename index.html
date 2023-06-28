@@ -7,78 +7,104 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="grid-container">
-        <div class="bckgr-pct"></div>
-        <div class="logo-div">
-          <img src="/img/odin-lined.png" alt="odin" />
-          <h1>ODIN</h1>
+    <div class="content-wrapper">
+      <div class="left-side">
+        <div class="logo">
+          <div class="odin-plus">
+            <img src="/img/odin-lined.png" alt="odin" id="odin-logo" />
+            <p>ODIN</p></odin-plus>
+          </div>
         </div>
         <div class="painter-info">
-          <p>Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
+          <p>
+            Photo by
+            <a href="https://unsplash.com/@drewdempsey" target="_blank">Drew Dempsey</a> on
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </p>
         </div>
-
-
-        <div class="top-par">
-        <p>This is ont a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</em></p>
-        <br/>
-        <p>You <em>know</em> you want to!</p>
-        </div>
-        
-        <div class="form-div">
-          <form action="#" method="post">
-            
-            <h2>Let's do this!</h2>
-
-            <div class="first-name-div">
-              <div class="first-name-label">
-              <label for="first-name">FIRST NAME</label> </div>
-              <input type="text" name="first name" id="first-name">
-            </div>
-
-            <div class="email-div">
-              <div class="email-label">
-              <label for="email">EMAIL</label> </div>
-              <input type="email" name="email" id="email">
-            </div>
-
-            <div class="password-div">
-              <div class="password-label">
-              <label for="password">PASSWORD</label> </div>
-              <input type="password" name="password" id="password">
-            </div>
-
-            <div class="last-name-div">
-              <div class="last-name-label">
-              <label for="last-name">LAST NAME</label> </div>
-              <input type="text" name="last name" id="last-name">
-            </div>
-
-            <div class="phone-number-div">
-              <div class="phone-number-label">
-              <label for="phone-number">FIRST NAME</label> </div>
-              <input type="tel" name="phone number" id="phone-number">
-            </div>
-
-            <div class="cnfrm-password-div">
-              <div class="cnfrm-password-label">
-              <label for="cnfrm-password">CONFIRM PASSWORD</label> </div>
-              <input type="password" name="confirm password" id="cnfrm-password">
-            </div>
-    
-          </form>
-        </div>
-
-        <div class="right-bottom-side">
-          <div class="btn-div">
-            <button type="submit" id="btn-create">Create Account</button>
+      </div>
+      <div class="right-side">
+        <div class="top-para">
+          <div class="paragraphs-div"><p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started
+          </p>
+          <br />
+          <p>You <em>know</em> you want to!</p>
           </div>
-          <br/>
-          <div class="para-div"><p>Already have an ccount? <a href="#">Log in</a></p></div>
         </div>
-        
-        
-      
 
+        <div class="middle-div">
+          <h2>Let's do this!</h2>
+          <div class="form-div">
+            <form action="#" method="post" id="1stform">
+              <div class="left-side-form">
+                <div class="first-name-div pdg-prop">
+                  <div class="first-name-label">
+                    <label for="first-name">FIRST NAME<strong>*</strong></label>
+                  </div>
+                  <input type="text" name="first name" id="first-name" />
+                </div>
+
+                <div class="email-div pdg-prop">
+                  <div class="email-label">
+                    <label for="email">EMAIL<strong>*</strong></label>
+                  </div>
+                  <input type="email" name="email" id="email" />
+                </div>
+
+                <div class="password-div pdg-prop">
+                  <div class="password-label">
+                    <label for="password">PASSWORD<strong>*</strong></label>
+                  </div>
+                  <input type="password" name="password" id="password" />
+                </div>
+              </div>
+              <div class="right-side-form">
+                <div class="last-name-div pdg-prop">
+                  <div class="last-name-label">
+                    <label for="last-name">LAST NAME</label>
+                  </div>
+                  <input type="text" name="last name" id="last-name" />
+                </div>
+
+                <div class="phone-number-div pdg-prop">
+                  <div class="phone-number-label">
+                    <label for="phone-number">PHONE</label>
+                  </div>
+                  <input type="tel" name="phone number" id="phone-number" />
+                </div>
+
+                <div class="cnfrm-password-div pdg-prop">
+                  <div class="cnfrm-password-label">
+                    <label for="cnfrm-password"
+                      >CONFIRM PASSWORD<strong>*</strong></label
+                    >
+                  </div>
+                  <input
+                    type="password"
+                    name="confirm password"
+                    id="cnfrm-password"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="bottom-right-side">
+          <div class="btn-par-div">
+            <div class="btn">
+              <button form="1stform">Create Account</button>
+            </div>
+            <div class="par-div-bot">
+              <p>
+                Already have an account! <a href="https://www.google.com/" id="loglink" target="_blank">Log in</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
