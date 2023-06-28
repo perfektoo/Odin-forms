@@ -87,6 +87,9 @@ img#odin-logo {
   padding-left: 35px;
   padding-top: 20px;
   height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form-div {
