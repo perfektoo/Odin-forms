@@ -13,7 +13,7 @@ a {
 
 @font-face {
   font-family: "Norse";
-  src: url(/font/Norse-Bold.otf);
+  src: url("font/Norse-Bold.otf");
 }
 
 .content-wrapper {
@@ -27,7 +27,7 @@ a {
   width: 40vw;
   height: 100vh;
   color: white;
-  background-image: url(img/back.jpg);
+  background-image: url("img/back.jpg");
   background-size: cover;
   text-align: center;
 }
